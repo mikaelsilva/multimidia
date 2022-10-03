@@ -2,15 +2,18 @@
     "author": "",
     "license": "ISC",
     "scripts": {
-        "dev": "nodemon server.js"
+        "dev": "nodemon server.js",
+        "build": "webpack --progress",
     },
     "dependencies": {
         "body-parser": "^1.20.0",
         "ejs": "^3.1.8",
         "express": "4.16.3",
-        "mongodb": "^4.10.0"
+        "mongodb": "^4.10.0",
+        "webpack": "^5.74.0"
     },
     "devDependencies": {
-        "nodemon": "^2.0.20"
+        "nodemon": "^2.0.20",
+        "webpack-cli": "^4.10.0"
     }
 }

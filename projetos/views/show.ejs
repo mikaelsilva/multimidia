@@ -13,8 +13,9 @@
     <table border="1">
         <thead>
             <tr>
-                <td>Nome</td>
-                <td>Sobrenome</td>
+                <td>Cod</td>
+                <td>Lat</td>
+                <td>Long</td>
                 <td>Action</td>
             </tr>
         </thead>
@@ -22,8 +23,9 @@
         <tbody>
             <% data.forEach(function(details) { %>
                 <tr>
-                    <td><%= details.masterData.name %></td>
-                    <td><%= details.masterData.surname %></td>
+                    <td><%= details.cod %></td>
+                    <td><%= details.lat %></td>
+                    <td><%= details.long %></td>
                     <td><a href="/edit/<%= details._id %>">Editar</a> - <a href="/delete/<%= details._id %>">Delete</a></td>
                 </tr>
             <% }) %>
