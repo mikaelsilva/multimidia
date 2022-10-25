@@ -2,13 +2,14 @@
     "name":"testing",
     "version":"1.0.0",
     "description": "express testing",
-    "main":"./projetos/server.js",
+    "main":"server.js",
     "engines":{"node":"14.x"},
     "author": "",
     "license": "ISC",
     "scripts": {
         "start":"node server.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev":"nodemon server.js",
+        "test":"echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
     "dependencies": {
