@@ -4,7 +4,8 @@ const { ObjectId } = require('mongodb');
 const app = express()
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://mvs2:Mongodb123@cluster0.75iwdbw.mongodb.net/test";
+//const uri = "mongodb+srv://mvs2:Mongodb123@cluster0.75iwdbw.mongodb.net/test";
+const uri = "mongodb+srv://mvs2:Mongodb123@cluster0.75iwdbw.mongodb.net/?retryWrites=true&w=majority"
 
 MongoClient.connect(uri,{useNewUrlParser: true}, (err, client) => {
     if (err) return console.log(err)
