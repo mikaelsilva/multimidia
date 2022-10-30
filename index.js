@@ -7,13 +7,17 @@ const MongoClient = require('mongodb').MongoClient;
 //const uri = "mongodb+srv://mvs2:Mongodb123@cluster0.75iwdbw.mongodb.net/test";
 const uri = "mongodb+srv://mvs2:Mongodb123@cluster0.75iwdbw.mongodb.net/?retryWrites=true&w=majority"
 
-MongoClient.connect(uri,{useNewUrlParser: true}, (err, client) => {
-    if (err) return console.log(err)
-    db = client.db('test')
+//MongoClient.connect(uri,{useNewUrlParser: true}, (err, client) => {
+//    if (err) return console.log(err)
+//    db = client.db('test')
 
-    app.listen(3000, () => {
-        console.log('server running on port 3000')
-    })
+//    app.listen(3000, () => {
+//        console.log('server running on port 3000')
+//    })
+//})
+
+app.listen(3000, () => {
+    console.log('server running on port 3000')
 })
 
 app.use(bodyParser.urlencoded({extended: true}))
