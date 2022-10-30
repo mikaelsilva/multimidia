@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express');
 const bodyParser = require('body-parser');
 const { ObjectId } = require('mongodb');
 const app = express()
@@ -39,6 +39,7 @@ app.get('/show', (req,res) => {
         res.render('show.ejs', {data: results})
    })
 })
+//module.exports = app;
 
 //app.post('/show', (req,res) => {
 //    db.collection('multimidia').insertOne({"cod":req.body.cod,"lat":req.body.lat,"long":req.body.long}, (err, result) => {
