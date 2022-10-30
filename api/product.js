@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   try {
-    res.render('index.ejs')
+    res.render('../views/index.ejs')
   } catch (error) {
     console.error(error);
     return res.status(500).send("Server error");
