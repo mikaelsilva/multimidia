@@ -12,13 +12,8 @@ app.use("/api/product", product);
 const PORT = process.env.PORT || 8080;
 //app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));
 
-MongoClient.connect(uri,{useNewUrlParser: true}, (err, client) => {
-        if (err) return console.log(err)
-        db = client.db('test')
-    
-        app.listen(PORT, () => {
-            console.log(`Server is running in port ${PORT}`)
-        })
+app.listen(PORT, () => {
+    console.log(`Server is running in port ${PORT}`)
 })
 
 
