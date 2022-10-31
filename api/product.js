@@ -15,7 +15,8 @@ app.get("/", async (req, res) => {
       //  status: 200,
       //  message: "Get data has successfully",
       //});
-      res.render(path.join('../views/index.ejs'));
+      console.log(__dirname);
+      console.log(path.dirname(__filename));
       
     } catch (error) {
       console.error(error);
