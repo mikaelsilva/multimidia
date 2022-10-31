@@ -13,7 +13,8 @@ app.get("/", async (req, res) => {
     //  status: 200,
     //  message: "Get data has successfully",
     //});
-    res.render('../views/index.ejs');
+    console.log('APENAS UM TESTE')
+    res.render('index.ejs');
     
   } catch (error) {
     console.error(error);
