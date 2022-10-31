@@ -1,5 +1,7 @@
 const express = require("express");
 const router = express.Router();
+
+const path = require('path');
 const app = express();
 
 /**
@@ -8,18 +10,17 @@ const app = express();
  * @return product list | empty.
  */
 app.get("/", async (req, res) => {
-  try {
-    //res.json({
-    //  status: 200,
-    //  message: "Get data has successfully",
-    //});
-    console.log('APENAS UM TESTE')
-    res.render('index.ejs');
-    
-  } catch (error) {
-    console.error(error);
-    return res.status(500).send("Server error");
-  }
-});
+    try {
+      //res.json({
+      //  status: 200,
+      //  message: "Get data has successfully",
+      //});
+      res.render(path.join('../views/index.ejs'));
+      
+    } catch (error) {
+      console.error(error);
+      return res.status(500).send("Server error");
+    }
+  });
 
 module.exports = app;
